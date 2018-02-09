@@ -42,7 +42,6 @@
 							{/*简历主内容*/}
 							{comps}
 						</div>
-						<div id="footer"><div id="credit">Powered by <a href="https://github.com/jaskey/easyresume/" target="_blank" >EasyResume</a></div></div>{/*水印*/}
 					</div>
 				)
 			},
@@ -122,7 +121,7 @@
 						<div className="info-contact">
 								<div>电话:{this.props.tel}</div>
 								<div>邮件:{this.props.email}</div>
-                                {this.props.blog? <span>博客:<span dangerouslySetInnerHTML={createMarkup(this.props.blog)}/></span>:null}{/*有博客则显示博客*/}
+                                {this.props.blog ? <span>博客:<a target="_blank" href={createMarkup(this.props.blog)} dangerouslySetInnerHTML={createMarkup(this.props.blog)}></a></span>:null}
 						</div>
 					</div>
 				)
