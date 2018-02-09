@@ -65,7 +65,7 @@
     </div>	
 
 	<script type="text/babel">
-		$.getJSON("resume.json",[])
+		$.getJSON("resume.json?t="+new Date().getTime(),[])
 			.done(function(data){
 				console.log('[done][resume.json read successfully]',data);
 				var json = data;
