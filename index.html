@@ -4,7 +4,7 @@
     <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
     <meta http-equiv="Cache-control" content="public">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>easy resume</title>
+    <title>resume</title>
 	<link rel="stylesheet" href="src/stylesheet/resume.css" type="text/css"></link>
 	<link rel="stylesheet" media="screen and (min-width: 1020px)"  href="src/stylesheet/resume_hdp.css" type="text/css"></link>
 	<link rel="stylesheet" media="screen and (max-width: 1019px) and (min-width: 451px)" href="src/stylesheet/resume_mdp.css" type="text/css"></link>
@@ -72,7 +72,7 @@
 				ReactDOM.render(<div><Resume  json={json}/></div>,document.getElementById('container'));
 
 				var name = json.name;
-				if(name) document.title='EasyResume-'+name;
+				if(name) document.title='Resume-'+name;
 			}).fail(function(jqxhr, textStatus, error ){
 				var err = textStatus + ", " + error;
             	console.error( "[Request resume.json Failed]: " + err );
