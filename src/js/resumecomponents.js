@@ -121,7 +121,7 @@
 						<div className="info-contact">
 								<div>电话:{this.props.tel}</div>
 								<div>邮件:{this.props.email}</div>
-                                {this.props.blog ? <span>博客:<a target="_blank" href={his.props.blog} dangerouslySetInnerHTML={createMarkup(this.props.blog)}></a></span>:null}
+                                {this.props.blog ? <span>博客:<a target="_blank" href={this.props.blog} dangerouslySetInnerHTML={createMarkup(this.props.blog)}></a></span>:null}
 						</div>
 					</div>
 				)
